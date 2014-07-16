@@ -11,4 +11,4 @@ For the sources container:
 
 For the ezproxy container:
 =====
-    docker run -d --name logstash_ezproxy -v /opt/logstash/data/ezproxy1.res:/ezproxy/ezproxy1.res --link logstash_sources:logstash_sources -p 9201:9200 -p 9293:9292 -p 515:514 -e LOGSTASH_CONFIG_URL=https://raw.githubusercontent.com/ckortekaas/logstash-ezproxy-docker/master/logstash-sources.conf ckortekaas/logstash-contrib
+    docker run -d --name logstash_ezproxy -v /opt/logstash/data/ezproxy1.res:/ezproxy/ezproxy1.res --link logstash_sources:logstash_sources -p 9201:9200 -p 9293:9292 -p 515:514 -e LOGSTASH_CONFIG_URL=https://raw.githubusercontent.com/ckortekaas/logstash-ezproxy-docker/master/logstash.conf ckortekaas/logstash-contrib
